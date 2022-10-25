@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body {
+    font-size: 18px;
+    overflow-x: hidden;
+}
+
+.navbar {
+    background-color: #0e0d0d;
+    z-index: 12;
+    position: relative;
+    box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.2);
+}
+.navbar ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1% 10%;
+}
+.navbar ul li {
+    list-style: none;
+    padding-top: 1% ;
+}
+.navbar ul li a {
+    text-decoration: none;
+    font-family:cursive;
+    font-size: 1.1em;
+    color: whitesmoke;
+    outline-style: none;
+}
+.navbar ul li a:hover{
+    color: yellowgreen;
+}
+
+
+/* Responsive Layout */
+
+@media (min-width: 320px) and (max-width:578px){
+    .navbar ul li {
+        padding-top: 5%;
+    }
+    .navbar ul li img {
+        margin-top: -10%;
+    }
+    .navbar ul li a {
+        font-size: 0.9em;
+    }
+}

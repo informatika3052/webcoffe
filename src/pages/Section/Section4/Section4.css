@@ -1,0 +1,112 @@
+.feedback-wrapper{
+    background-image: url(../Section4/img/bg.png);
+    height: 120vh;
+    background-position: 0 10%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.feedback-wrapper .blook {
+    font-family:'Nunito Sans', sans-serif ;
+    font-size: 2.3em;
+    font-weight: 700;
+    margin-top: 15%;
+    margin-left: 5%;
+}
+.feedback-title {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -2%;
+}
+.feedback-1 {
+    width: 90%;
+    margin-top: 8%;
+    position: relative;
+    z-index: 22;
+    top: 0;
+    left: 5%;
+    z-index: -1;
+    transition: 0.2s;
+}
+.feedback-1::before {
+    content: '';
+    height: 2vh;
+    width: 90%;
+    background: linear-gradient(to right, #d3af53,#fddf94 );
+    position: absolute;
+    top: -2%;
+    left: 4%;
+    z-index: -1;
+}
+.feedback-1::after {
+    content: '';
+    height: 2vh;
+    width: 95%;
+    background: linear-gradient(to right, #d3af53,#fddf94 );
+    position: absolute;
+    bottom: -1%;
+    left: 4%;
+    z-index: -1;
+
+}
+.feedback-1 img {
+    width: 100%;
+}
+
+.feedback-2 {
+    margin-top: -2%;
+    background-color: black;
+    margin-right: 10%;
+    height: 70vh;
+    border-radius: 10px;
+    width: 80%;
+}
+.feedback-wrapper .feedback-2 h4 {
+    color: #E4BE36;
+    font-family:'Nunito Sans', sans-serif ;
+    padding: 5% 10%;
+    font-size: 1.5em;
+}
+.feedback-2 p{
+    color: #ffffff;
+    font-family:'Montserrat', sans-serif ;
+    padding: 2% 10%;
+    font-size: 0.8em;
+    letter-spacing: 0.1em;
+}
+
+.feedback-2 .afif {
+    color: #E4BE36;
+    font-family:'Montserrat', sans-serif ;
+    padding-top: 30%;
+    font-size: 0.8em;
+}
+
+
+/* Responsive Layout */
+@media (min-width: 320px) and (max-width:578px){
+    .feedback-wrapper{
+     height: 130vh;
+       
+    }
+    .feedback-wrapper .blook {
+        text-align: center;
+        width: 100%;
+    }
+    .feedback-title {
+        display: inline-block;
+    }
+    .feedback-1{
+        display: none;
+    }
+    .feedback-2 {
+        width: 90%;
+        margin-top: 10%;
+        margin-left: 8%;
+    }
+    .feedback-2 .afif {
+        padding-top: 50%;
+     }
+   
+   
+}

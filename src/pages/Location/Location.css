@@ -1,0 +1,58 @@
+.location-wrapper {
+    background-image: url(./img/location.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+    opacity: 0.8;
+    position: relative;
+}
+.location-wrapper::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.301);
+}
+.location-title {
+    margin-top: 10%;
+    width: 50%;
+    position: relative;
+}
+.location-title hr {
+    width: 30%;
+    height: 1px;
+    background-color: rgb(116, 116, 124);
+}
+.location-title h3,.location-title p {
+    padding-top: 2%;
+    font-size: 2.5em;
+    font-family:'Nunito Sans', sans-serif ;
+    font-weight: 700;
+    color: rgb(240, 229, 229);
+}
+.location-title p {
+    padding-top: 5%;
+    font-size: 1.1em;
+    color: rgb(235, 174, 45);
+}
+
+
+/* Responsive Layout */
+@media (min-width: 320px) and (max-width:578px){
+    .location-title {
+        margin-top: 20%;
+        width: 100%;
+    }
+    .location-title hr {
+        width: 50%;
+     }
+    
+    
+}
